@@ -78,7 +78,6 @@ const CardToDo = ({ texto, handleRemoveItem, expected }: CardsProps) => {
 }
 
 function App() {
-
   const [task, setTask] = useState('')
   const [item, setItem] = useState<string[]>([]);
   const [expected, setExpected] = useState(0)
@@ -104,7 +103,6 @@ function App() {
                   className='form-control'
                   onChange={(event) =>{ 
                     setTask(event.target.value)
-                    
                   }
                   }
                 />
@@ -146,8 +144,6 @@ function App() {
         </div>
       </div>
     </div>
-
-
   )
 }
 
